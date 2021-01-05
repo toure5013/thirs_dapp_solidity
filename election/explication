@@ -1,0 +1,25 @@
+BISMILLAHI RAHMANI RAHIM
+
+1 - Les box Truffle
+Pour ecrire son Smart contrat il est conseil d'utiliser des boilerplate comme pet-shop :
+On le telecharge en faisant  :
+truffle unbox pet-shop
+
+
+2.Contract.sol
+La logique du smart contrat en solidity
+Dans le dossier contracts : 
+On ecrits notre logique du smart contrat
+
+2. Migration
+Dans le dossier migration 
+On duplique 1.initial_migration  et on change les données à ce que notre Smart contart que nous venons de créer soit celui qui sera importer
+
+
+3.Les commandes : 
+- truffle migrate : pour deployer son smart contrat
+- truffle migrate --reset : pour mettre à jour son smart contrat au cas où on changeait
+
+- truffle console : pour ouvrir la console interactive nous permettant d'interargir avec notre smart contrat
+
+
