@@ -16,14 +16,15 @@ contract("Election", function(accounts){
 			electionInstance = instance;
 			return electionInstance.candidates(1);
 		}).then(function(candidate){
-			assert.equal(candidate[0], 1 , "containes the correct id" );
-			assert.equal(candidate[1],"Candidate 1", "containes the correct name" );
-			assert.equal(candidate[2], 0, "containes the correct votes count" );
+			//assert permet de dire que : ("la valeur de ceci ", "est à cette valeur", "affiche le mesage en cas d'erreur")
+			assert.equal(candidate[0], 1 , "containes the correct id" ); 
+			assert.equal(candidate[1],"Candidate 1", "containes the correct name");
+			assert.equal(candidate[2], 0, "containes the correct votes count");
 			return electionInstance.candidates(2);
 		}).then(function(candidate){
 			assert.equal(candidate[0], 2, "containes the correct id" );
-			assert.equal(candidate[1], "Candidate 2","containes the correct name" );
-			assert.equal(candidate[2], 0, "containes the correct votes count" );
+			assert.equal(candidate[1], "Candidate 2","containes the correct name");
+			assert.equal(candidate[2], 0, "containes the correct votes count");
 		});
 	});
 });
