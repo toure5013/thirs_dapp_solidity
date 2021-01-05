@@ -19,7 +19,12 @@ On duplique 1.initial_migration  et on change les données à ce que notre Smart
 3.Les commandes : 
 - truffle migrate : pour deployer son smart contrat
 - truffle migrate --reset : pour mettre à jour son smart contrat au cas où on changeait
-
 - truffle console : pour ouvrir la console interactive nous permettant d'interargir avec notre smart contrat
 
 
+
+4. Unit tests
+Pour les test unitaire truffle embarque par défaut mocha et chai (deux librairires javascript pour écrire des test unitaires)
+Dans le dossier test nous creons notre fichier de test vce l'extension.js et nous ecrivons notre scénario de test à l'intérieur. Ensuite nous lançons la commande :
+
+- truffle test : cette commande effectue les test unitaires et nous retourne le résultat directement dans la console

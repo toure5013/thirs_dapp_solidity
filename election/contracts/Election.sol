@@ -5,11 +5,11 @@ contract Election{
 	struct Candidate {
 		uint id;
 		string name;
-		uint votCount;
+		uint voteCount;
 	}
 	
-	//store Candidates
-	//fetch Candidates
+	
+	//store Candidates && fetch Candidates
 	mapping (uint => Candidate) public candidates;
 
 	//Store candidates Count
@@ -17,9 +17,8 @@ contract Election{
 
 	constructor() public{
 		addCandidate("Candidate 1");
-		addCandidate("Candidate 2 ");
+		addCandidate("Candidate 2");
 	}
-
 
 	function addCandidate (string memory _name) private {
 		candidatesCount++;
@@ -28,3 +27,4 @@ contract Election{
 	
 
 }
+ 
